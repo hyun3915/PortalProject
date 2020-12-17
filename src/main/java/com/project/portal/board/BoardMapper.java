@@ -1,0 +1,9 @@
+package com.project.portal.board;
+
+import java.util.List;
+
+public interface BoardMapper {
+	
+	public List<BoardVO> getList() throws Exception;
+
+}
