@@ -14,8 +14,8 @@
 <c:import url="../template/header.jsp"></c:import>
 
 <div class="container">
-  <h3>Board List Page V1</h3>
-  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+  <h3>Board List Page V1eefs</h3>
+  <p>The .navbar-right class is used to right-align navigation bar buttons.sdfsfdsd</p>
 </div>
 </body>
 </html>

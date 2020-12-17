@@ -12,17 +12,33 @@
    		margin: 0;
    		padding: 0;
 	}
-
-	.header_top{
-		width: 100%;
-		height: 50px;
-		text-align: center;
-		font-size: 14px;
+	
+	header{
+		height: 120px;
+		margin: 0 auto;
+	}
+	
+   .fixed{
+      position: fixed;
+      top: 0;
+   }
+   
+   	.header_background{
 		background-color: #072F72;
 	}
 	
-	.haeder_inner{
-		width:100%;
+	.header_top{
+		margin: 0 auto;
+		width: 1300px;
+		height: 50px;
+		text-align: center;
+		font-size: 14px;
+	}
+	
+	.header_inner{
+		background-color: #072F72;
+		height: 50px;
+		width:1300px;
 		float: left;
 		padding-top: 15px;
 	}
@@ -30,17 +46,13 @@
 	.menu{
 		display: inline-block;
 		float: left;
-		margin-left: 40px;
+		margin-right: 30px;
 	}
 	
 	.menu a{
 		color: white;
 		text-decoration: none;
 		cursor: pointer;
-	}
-	
-	#menu1{
-		margin-left: 230px;
 	}
 	
 	#menu2{
@@ -51,18 +63,47 @@
 		color: orange;
 	}
 	
+	.header_bottom{
+		margin: 0 auto;
+		width: 1300px;
+		height: 70px;
+	}
+	
 	.logo{
-		margin-left:227px;
+		float: left;
 		height: 70px;
 		width: 250px;
-		background-color: yellow;
 	}
 	
 	#header_logo{
 		float:left;
 		margin-top:13px;
-		background-color: red;
 	}
+	
+	.nav_menu{
+		float: right;
+		margin-right: 10px;
+	}
+	
+	.nav_menu li{
+		margin-right:5px;
+		text-align: right;
+		float: left;
+		width: 130px;
+		height: 70px;
+	}
+	
+	.nav_sub a{
+		
+		line-height: 70px;
+		text-decoration: none;
+		color: #202020;
+		font-weight: 600;
+		font-size: 17px;
+   		text-align: center;
+		cursor: pointer;
+	}
+
 	
 </style>
 <meta charset="UTF-8">
@@ -70,8 +111,9 @@
 </head>
 <body>
 <header>
+<div class="header_background">
 <div class="header_top">
-	<div class="haeder_inner">
+	<div class="header_inner">
 		<ul class="header_inner_menu">
 			<li class="menu" id="menu1">
 				<a class="tab">PORTAL</a>
@@ -79,7 +121,7 @@
 			<li class="menu">
 				<a>HOMEPAGE</a>
 			</li>
-			<li class="menu" id="menu2" style="margin-right: 50px;">
+			<li class="menu" id="menu2">
 				<a>로그인 →</a>
 			</li>
 			<li class="menu" id="menu2">
@@ -88,10 +130,25 @@
 		</ul>
 	</div>
 </div>
-<div>
-	<div class="heder_bottom">
+</div>
+<div class="header_bottom">
+	<div>
 		<div class="logo">
 			<a id="header_logo"><img src="./images/logo.png"></a>
+		</div>
+		<div class="nav_menu">
+			<ul class="nav_sub">
+				<li class="nav_sub01">
+					<a>통합정보</a>
+				</li>
+				<li class="nav_sub02">
+					<a>이러닝</a>
+				</li>
+				<li class="nav_sub03">
+					<a>게시판</a>
+				</li>
+				
+			</ul>
 		</div>
 	</div>
 </div>
