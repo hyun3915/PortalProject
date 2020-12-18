@@ -10,12 +10,12 @@
 		padding: 0px;
 	}
 	
-	.container{
+	.container {
 		min-width:1300px;
 		height: 700px;
 		margin: 0 auto;
-		border: 1px solid #303030;
 	}
+	
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -24,18 +24,14 @@
 <body>
 <c:import url="./template/header.jsp"></c:import>
 
+<div class="container" style="padding: 0px;">
 
-<div class="container">
+	<c:import url="./template/slide.jsp"></c:import>
 
-
-  <h3>EULJI UNIVERSITY</h3>
   
 </div>
 <c:import url="./template/footer.jsp"></c:import>
 <script type="text/javascript">
-
-
 </script>
-
 </body>
 </html>
