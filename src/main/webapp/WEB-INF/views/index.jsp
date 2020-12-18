@@ -12,9 +12,9 @@
 	
 	.container{
 		min-width:1300px;
-		height: 800px;
+		height: 700px;
 		margin: 0 auto;
-		background-color: yellow;
+		border: 1px solid #303030;
 	}
 </style>
 <meta charset="UTF-8">
@@ -31,7 +31,7 @@
   <h3>EULJI UNIVERSITY</h3>
   
 </div>
-
+<c:import url="./template/footer.jsp"></c:import>
 <script type="text/javascript">
 
 

@@ -7,10 +7,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-public class PotalProjectApplication {
+public class PortalProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PotalProjectApplication.class, args);
+		SpringApplication.run(PortalProjectApplication.class, args);
 	}
 
 }
