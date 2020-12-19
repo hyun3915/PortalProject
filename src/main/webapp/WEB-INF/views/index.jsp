@@ -27,11 +27,9 @@
 <div class="container" style="padding: 0px;">
 
 	<c:import url="./template/slide.jsp"></c:import>
-
+	<c:import url="./template/body.jsp"></c:import>
   
 </div>
 <c:import url="./template/footer.jsp"></c:import>
-<script type="text/javascript">
-</script>
 </body>
 </html>
