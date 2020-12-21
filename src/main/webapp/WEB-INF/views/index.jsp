@@ -12,7 +12,7 @@
 	
 	.container {
 		min-width:1300px;
-		height: 700px;
+		height: 980px;
 		margin: 0 auto;
 	}
 	

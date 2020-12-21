@@ -51,7 +51,6 @@
 		text-decoration: none;
 		color: #555;
 		font-weight: 500;
-		
 	}
 	
 	.common:hover{
@@ -123,6 +122,126 @@
 		padding-top: 17px;
 	}
 	
+	.middle_banner{
+		width: 1300px;
+		height: 350px;
+	}
+	
+	.table{
+		padding:0px;
+		width:1300px;
+		height: 75px;
+		margin: 0px;
+		border-left: 1px solid #E1E1E1;
+		border-bottom: 1px solid #E1E1E1;
+	}
+	
+	.table span{
+		text-decoration:none;
+		cursor: pointer;
+		color: #555;
+		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
+		float: left;
+		height: 75px;
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 27px;
+	}
+	
+	.table span:hover{
+		background-color: #E1E1E1;
+	}
+	
+	.middle_banner_1{
+		width: 324.5px;
+		height: 75px;
+		float: left;
+	}
+	
+	.middle_banner_2{
+		width: 324.5px;
+		float: left;
+		height: 75px;
+	}
+	
+	.middle_banner_3{
+		width: 324.5px;
+		height: 75px;
+		float: left;
+	}
+	
+	.middle_banner_4{
+		width: 326.5px;
+		float: left;
+		height: 75px;
+		border-right: 1px solid #E1E1E1;
+	}
+	
+	.middle_banner_5{
+		width: 324.5px;
+		height: 75px;
+		float: left;
+	}
+	
+	.middle_banner_6{
+		width: 324.5px;
+		float: left;
+		height: 75px;
+	}
+	
+	.middle_banner_7{
+		width: 324.5px;
+		height: 75px;
+		float: left;
+	}
+	
+	.middle_banner_8{
+		width: 326.5px;
+		float: left;
+		height: 75px;
+		border-right: 1px solid #E1E1E1;
+	}
+	
+	.middle_banner_9{
+		width: 324.5px;
+		height: 75px;
+		float: left;
+	}
+	
+	.middle_banner_10{
+		width: 324.5px;
+		float: left;
+		height: 75px;
+	}
+	
+	.middle_banner_11{
+		width: 324.5px;
+		height: 75px;
+		float: left;
+	}
+	
+	.middle_banner_12{
+		width: 326.5px;
+		float: left;
+		height: 75px;
+		border-right: 1px solid #E1E1E1;
+	}
+	
+	.middle_banner_13{
+		width: 324.5px;
+		height: 75px;
+		float: left;
+	}
+	
+	.middle_banner_14{
+		width: 975.5px;
+		float: left;
+		height: 75px;
+		border-right: 1px solid #E1E1E1;
+	}
+	
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -168,7 +287,50 @@
 			<div class="middle_service2">
 				<span id="service">관련사이트</span>
 			</div>
-		</div>	
+		</div>
+		
+		<div class="middle_banner">	
+			<div class="table middle_banner_1">
+				<a href="#"><span>인터넷 증명서</span></a>
+			</div>
+			<div class="table middle_banner_2">
+				<a href="#"><span>웹메일</span></a>
+			</div>
+			<div class="table middle_banner_3">
+				<a href="#"><span>을지대학교</span></a>
+			</div>
+			<div class="table middle_banner_4">
+				<a href="#"><span>을지의료원</span></a>
+			</div>
+			<div class="table middle_banner_5">
+           		 <a href="#"><span>공간대관시스템</span></a>
+			</div>
+			<div class="table middle_banner_6">
+				<a href="#"><span>IT 서비스</span></a>
+			</div>
+			<div class="table middle_banner_7">
+				<a href="#"><span>을지동문회</span></a>
+			</div>
+			<div class="table middle_banner_8">
+				<a href="#"><span style="padding-top: 15px">통합연구<br>정보시스템</span></a>
+			</div>
+			<div class="table middle_banner_9">
+				<a href="#"><span style="padding-top: 15px">대전캠퍼스<br>셔틀버스예약</span></a>
+			</div>
+			<div class="table middle_banner_10">
+				<a href="#"><span>모바일 학사서비스</span></a>
+			</div>
+			<div class="table middle_banner_11">
+				<a href="#"><span style="padding-top: 15px">비대면 | 온라인<br>강의설문조사</span></a>
+			</div>
+			<div class="table middle_banner_12">
+			</div>
+			<div class="table middle_banner_13">
+				<a href="#"><span>전자출석부</span></a>
+			</div>
+			<div class="table middle_banner_14">
+			</div>
+		</div>
 	
 	</div>
 </body>
