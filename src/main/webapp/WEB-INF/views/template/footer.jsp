@@ -16,9 +16,8 @@
 	
 	footer{
 		width: 1300px;
-		height: 130px;
+		height: 110px;
 		margin: 0 auto;
-		padding: 10px 0 100px 0;
 	}
 	
 	.ft_top{
@@ -122,7 +121,7 @@
 	
 	<div class="ft_left">
 		<div id="ft_left_logo">
-			<img src="./images/f_logo.png">
+			<img src="${pageContext.request.contextPath}/images/f_logo.png">
 		</div>
 	</div>
 	
@@ -139,8 +138,8 @@
 	
 	<div class="ft_right">
 		<div id="ft_sns">
-			<a><img src="./images/sns1.gif"></a>
-			<a><img src="./images/sns2.gif"></a>
+			<a><img src="${pageContext.request.contextPath}/images/sns1.gif"></a>
+			<a><img src="${pageContext.request.contextPath}/images/sns2.gif"></a>
 		</div>
 	</div>
 

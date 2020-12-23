@@ -21,6 +21,7 @@
 		margin: 0 auto;
 		background: url("./images/top_banner_1.png");
 	}
+
 	
 	#essential_service{
 		display: inline-block;
@@ -140,7 +141,7 @@
 		text-decoration:none;
 		cursor: pointer;
 		color: #555;
-		font-size: 16px;
+		font-size: 15px;
 		font-weight: 500;
 		text-align: center;
 		float: left;

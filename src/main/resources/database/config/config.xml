@@ -7,5 +7,6 @@
 	<typeAliases>
 		<typeAlias type="com.project.portal.board.BoardVO" alias="BoardVO"/>
 		<typeAlias type="com.project.portal.board.notice.NoticeVO" alias="NoticeVO"/>
+		<typeAlias type="com.project.portal.member.MemberVO" alias="MemberVO"/>
 	</typeAliases>
 </configuration>  
