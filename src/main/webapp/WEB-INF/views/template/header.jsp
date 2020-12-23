@@ -116,13 +116,13 @@
 	<div class="header_inner">
 		<ul class="header_inner_menu">
 			<li class="menu" id="menu1">
-				<a class="tab">PORTAL</a>
+				<a class="tab" href="${pageContext.request.contextPath}/">PORTAL</a>
 			</li>
 			<li class="menu">
-				<a>HOMEPAGE</a>
+				<a href="${pageContext.request.contextPath}/">HOMEPAGE</a>
 			</li>
 			<li class="menu" id="menu2">
-				<a>로그인 →</a>
+				<a href="${pageContext.request.contextPath}/member/memberLogin">로그인 →</a>
 			</li>
 			<li class="menu" id="menu2">
 				<a>현수빈님 환영합니다.</a>

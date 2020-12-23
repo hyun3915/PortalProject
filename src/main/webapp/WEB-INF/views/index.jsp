@@ -12,7 +12,7 @@
 	
 	.container {
 		min-width:1300px;
-		height: 980px;
+		height: 930px;
 		margin: 0 auto;
 	}
 	
@@ -25,7 +25,6 @@
 <c:import url="./template/header.jsp"></c:import>
 
 <div class="container" style="padding: 0px;">
-
 	<c:import url="./template/slide.jsp"></c:import>
 	<c:import url="./template/body.jsp"></c:import>
   
