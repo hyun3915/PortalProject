@@ -128,6 +128,7 @@
 </head>
 <body>
 	<div class="container">
+	  <form action="./memberLogin" method="post">
 		<div class="container_1">
 			<div class="login">
 				<h2>
@@ -156,6 +157,7 @@
 				</div>
 			</div>
 		</div>
+		</form>
 		<div class="container_2">
 		</div>
 	</div>

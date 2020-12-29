@@ -121,12 +121,19 @@
 			<li class="menu">
 				<a href="${pageContext.request.contextPath}/">HOMEPAGE</a>
 			</li>
-			<li class="menu" id="menu2">
-				<a href="${pageContext.request.contextPath}/member/memberLogin">로그인 →</a>
-			</li>
-			<li class="menu" id="menu2">
-				<a>현수빈님 환영합니다.</a>
-			</li>
+			<c:choose>
+       	 	<c:when test="${not empty member}">
+       		 <!-- 로그인상태 -->
+      	 	  <li class="menu" id="menu2"><a href="${pageContext.request.contextPath}/member/memberPage"><span class="glyphicon glyphicon-user"></span> My Page</a></li>
+       		  <li class="menu" id="menu2"><a href="${pageContext.request.contextPath}/member/memberLogin"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
+       		</c:when>
+       		
+       		<c:otherwise>
+      	 	 <!-- 로그아웃상태 -->
+      	  	  <li class="menu" id="menu2"><a href="${pageContext.request.contextPath}/member/memberJoin"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+     	  	  <li class="menu" id="menu2"><a href="${pageContext.request.contextPath}/member/memberLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+     	 	</c:otherwise>
+     	 </c:choose>
 		</ul>
 	</div>
 </div>

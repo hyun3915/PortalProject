@@ -5,10 +5,15 @@
 
 <mapper namespace="com.project.portal.member.MemberMapper">
 	
-	<select id="getMemberLogin" parameterType="MemberVO">
+	<select id="getMemberLogin" parameterType="MemberVO" resultMap="MemberLoginResult">
 		select M.*
 		from member M
 		where M.id=#{id} and M.pw=#{pw};
 	</select>
+	
+	<resultMap type="MemberVO" id="MemberLoginResult">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+	</resultMap>
 
 </mapper>
