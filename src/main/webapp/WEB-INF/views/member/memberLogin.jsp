@@ -138,7 +138,7 @@
 				
 				<div class="login_input">
 					<input type="text" id="id" name="id" title="아이디 또는 학번" placeholder="학번(교번) (ID No.)">
-					<input type="text" id="pw" name="pw" title="비밀번호" placeholder="비밀번호 (Password)">
+					<input type="password" id="pw" name="pw" title="비밀번호" placeholder="비밀번호 (Password)">
 				</div>
 				
 				<div class="login_ex">

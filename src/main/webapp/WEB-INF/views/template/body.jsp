@@ -120,7 +120,7 @@
 		height: 50px;
 		font-size: 16px;
 		text-align: center;
-		padding-top: 10px;
+		padding-top: 15px;
 	}
 	
 	.middle_banner{
@@ -145,7 +145,7 @@
 		font-weight: 500;
 		text-align: center;
 		float: left;
-		height: 70px;
+		height: 60px;
 		width: 100%;
 		margin: 0 auto;
 		padding-top: 19px;

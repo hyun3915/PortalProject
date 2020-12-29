@@ -30,12 +30,19 @@ public class MemberController {
 			session.setAttribute("member", memberVO);
 			mv.setViewName("redirect:../");
 		}else {
-			String message = "Login Fail";
+			String message = "로그인에 실패했습니다.";
+			mv.addObject("msg", message);
 			mv.addObject("path","./memberLogin");
 			mv.setViewName("common/result");
 		}
 		
 		return mv;
+	}
+	
+	@GetMapping("memberLogout")
+	public String getMemberLogout(HttpSession session) throws Exception{
+		session.invalidate();
+		return "redirect:../";
 	}
 
 }
