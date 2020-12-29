@@ -8,49 +8,63 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <div class="container">
-	<form action="./memberPage" method="post" id="frm">
-		<h5 style="line-height: 0.2;"><b>기본정보</b></h5>
-   <p style="text-align: right; font-size: 13px; color=#353535; line-height: 0.2; font-family: 돋움;" ><img src="../resources/images/ico_required.png"> 필수입력사항</p>
-   <table border="1" class="table" style="border-color: #e8e8e8" >
-      <tr class="group">
-         <td  class="leftrow">&nbsp;&nbsp;아이디 <img src="../resources/images/ico_required.png"></td>
-         <td><input type="text" class="inputTypeText" id="id" name="id" value="${member.id}" readonly="readonly" required="required">
-              <div id="idResult" class="result"></div>
-           </td>
-      </tr>
-      
-      <tr id="#idResult"></tr>
-      <tr class="group">
-         <td  class="leftrow">&nbsp;&nbsp;비밀번호 <img src="../resources/images/ico_required.png"></td>
-         <td><input type="password" class="inputTypeText" id="pw" name="pw"> (영문 대/소문자/숫자 중 3가지 이상 조합, 8자~16자)
-             <div id="pwResult" class="result"></div>
-            </td>
-      </tr>
-      
-      <tr class="group">
-         <td class="leftrow">&nbsp;&nbsp;이름 <img src="../resources/images/ico_required.png"></td>
-         <td><input type="text" class="inputTypeText empty should" id="name" name="name" value="${member.name}" required="required"></td>
-      </tr>
-      
-      <tr class="group">
-         <td  class="leftrow">&nbsp;&nbsp;이메일 <img src="../resources/images/ico_required.png"></td>
-         <td><input type="email"  class="inputTypeText empty should" id="email" name="email" value="${member.email}" required="required">
-         		
-         	
-         </td>
-      </tr>
- 
-   </table>
-   <div style="text-align: center;" >   
-   <input type="button" value="수정" class="btn btn-join" id="update">  
-   <input type="button" value="취소" class="btn btn-cancel" id="cancel">
-  
-   </div>
-	<div style="text-align:right; margin-top: 50px;">
-	<input type="button" value="회원탈퇴" class="btn btn-cancel" id="delete">
+
+	<div>
+		<h4>member Page</h4>
 	</div>
-</form>
+	
+	<div>
+		<table>
+			<tr>
+				<td>아이디</td>
+				<td>비밀번호</td>
+				<td>이름</td>
+				<td>생년월일</td>
+				<td>입학일자</td>
+				<td>주소1</td>
+				<td>주소2</td>
+				<td>주소3</td>
+				<td>휴대폰</td>
+				<td>이메일</td>
+				<td>성별</td>
+				<td>직위</td>
+				<td>과정</td>
+				<td>전공</td>
+				<td>학년</td>
+				<td>캠퍼스</td>
+			</tr>
+			<tr>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.id}" readonly="readonly" required="required"></td>
+				<td><input type="password" class="inputTypeText" id="pw" name="pw"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.name}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.birth}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.enrollDate}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.addr1}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.addr2}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.addr3}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.phone}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.email}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.gender}" readonly="readonly" required="required"></td>
+				
+				<c:choose>
+				<c:when test="${member.status==0}">
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="학생" readonly="readonly" required="required"></td>
+				</c:when>
+				<c:otherwise>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="교직원" readonly="readonly" required="required"></td>
+				</c:otherwise>
+				</c:choose>
+				
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.course}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.major}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.grade}" readonly="readonly" required="required"></td>
+				<td><input type="text" class="inputTypeText" id="id" name="id" value="${member.campus}" readonly="readonly" required="required"></td>
+			</tr>
+		</table>
+	</div>
 </div>
+
 </body>
 </html>
