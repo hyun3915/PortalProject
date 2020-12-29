@@ -44,5 +44,10 @@ public class MemberController {
 		session.invalidate();
 		return "redirect:../";
 	}
+	
+	@GetMapping("memberPage")
+	public void getMemberPage() throws Exception{
+		
+	}
 
 }

@@ -46,7 +46,7 @@
 	.menu{
 		display: inline-block;
 		float: left;
-		margin-right: 30px;
+		margin-right: 13px;
 	}
 	
 	.menu a{
@@ -57,6 +57,7 @@
 	
 	#menu2{
 		float: right;
+		margin-left: 5px;
 	}
 	
 	.menu a:hover {
@@ -124,8 +125,8 @@
 			<c:choose>
        	 	<c:when test="${not empty member}">
        		 <!-- 로그인상태 -->
-      	 	  <li class="menu" id="menu2"><a href="${pageContext.request.contextPath}/member/memberPage"><span class="glyphicon glyphicon-user"></span> My Page</a></li>
-       		  <li class="menu" id="menu2"><a href="${pageContext.request.contextPath}/member/memberLogin"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
+       		  <li class="menu" id="menu2"><a href="${pageContext.request.contextPath}/member/memberLogin"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;로그아웃</a></li>
+      	 	  <li class="menu" id="menu2"><a href="${pageContext.request.contextPath}/member/memberPage"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;${member.id}님 환영합니다.</a></li>
        		</c:when>
        		
        		<c:otherwise>
