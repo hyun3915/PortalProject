@@ -144,6 +144,7 @@
 	</div>
 </div>
 </div>
+<c:import url="./template/sideNav.jsp"></c:import>
 <div class="header_bottom">
 	<div>
 		<div class="logo">
