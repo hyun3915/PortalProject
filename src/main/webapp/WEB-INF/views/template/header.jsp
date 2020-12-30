@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 	*{
 		font-family: NanumGothic;
@@ -105,6 +106,49 @@
 		cursor: pointer;
 	}
 
+	body {
+		font-family: "Lato", sans-serif;
+	}
+
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #072F72;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 17px;
+		color: #B9BCC9;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+		color: #fff;
+	}
+
+	@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
+	}
 	
 </style>
 <meta charset="UTF-8">
@@ -144,11 +188,30 @@
 	</div>
 </div>
 </div>
-<c:import url="./template/sideNav.jsp"></c:import>
+
 <div class="header_bottom">
 	<div>
+		<div style="float: left; margin-right: 30px; margin-top: 13px;">
+			<div id="mySidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<a href="#">도움말</a>
+  			<a href="#">★&nbsp;즐겨찾기</a>
+  			<a href="#">원격지원</a>
+  			<a href="#">메일</a>
+  			<a href="#">old 메일</a>
+  			<a href="#">제증명</a>
+  			<a href="#">도서관</a>
+  			<a href="#">취업정보</a>
+  			<a href="#">연구포털</a>
+  			<a href="#">연구네트워크</a>
+  			<a href="#">Blackboard</a>
+  			<a href="#">강의저작도구</a>
+  			<a href="#">홍보제안</a>
+		</div>
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</div>
 		<div class="logo">
-			<a id="header_logo"><img src="./images/logo.png"></a>
+			<a id="header_logo"><img src="${pageContext.request.contextPath}/images/logo.png"></a>
 		</div>
 		<div class="nav_menu">
 			<ul class="nav_sub">
@@ -167,5 +230,14 @@
 	</div>
 </div>
 </header>
+<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
 </body>
 </html>

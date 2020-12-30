@@ -4,11 +4,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+</style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<c:import url="../${pageContext.request.contextPath}/template/bootStrap.jsp"></c:import>
 </head>
 <body>
-
+<c:import url="../${pageContext.request.contextPath}/template/header.jsp"></c:import>
 <div class="container">
 
 	<div>

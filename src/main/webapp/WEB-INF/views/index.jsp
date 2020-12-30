@@ -22,7 +22,7 @@
 <c:import url="./template/bootStrap.jsp"></c:import>
 </head>
 <body>
-<c:import url="./template/header.jsp"></c:import>
+<c:import url="./${pageContext.request.contextPath}/template/header.jsp"></c:import>
 
 <div class="container" style="padding: 0px;">
 	<c:import url="./template/slide.jsp"></c:import>
