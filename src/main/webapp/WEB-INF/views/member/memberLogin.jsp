@@ -30,7 +30,7 @@
 	
 	.container_2{
 		display: inline-block;
-		width: 650px;
+		width: 500px;
 		height: 600px;
 		background-color: #094b9f;
 		margin-top: 100px;
@@ -122,6 +122,77 @@
 		height: 30px;
 	}
 	
+	.service_zone{
+		display:inline-block;
+		float:right;
+		margin-top: 25px;
+		width: 450px;
+		height: 550px;
+	}
+	
+	#zone_p1{
+		font-size: 16px;
+		color: #fff;
+		font-weight: 100;
+	}
+	
+	#zone_p2{
+		font-size: 40px;
+		color: #fff;
+		font-weight: lighter;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.service_all{
+		margin-top: 5px;
+	}
+	
+	.service1 {
+		background: url("../images/icon_01.png") no-repeat left center;
+	}
+	
+	.service_all a{
+		margin: 11px 0;
+		display: inline-block;
+		height: 86px;
+		padding-left: 115px;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	.service_all a #p1:hover{
+		text-decoration: underline;
+	}
+	
+	#p1{
+		font-size: 21px;
+    	font-weight: 600;
+		height: 22px;
+		line-height: 22px;
+		margin: 18px 0 11px 0;
+	}
+	
+	#p2{
+		font-size: 16px;
+		font-weight: 100;
+		height: 16px;
+		line-height: 16px;
+		text-decoration: none;
+	}
+	
+	.service2 {
+		background: url("../images/icon_02.png") no-repeat left center;
+	}
+	
+	.service3 {
+		background: url("../images/icon_03.png") no-repeat left center;
+	}
+	
+	.service4 {
+		background: url("../images/icon_04.png") no-repeat left center;
+	}
+	
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -159,6 +230,41 @@
 		</div>
 		</form>
 		<div class="container_2">
+			<div class="service_zone">
+				<div>
+					<p id="zone_p1">EULJI PORTAL SYSTEM</p>
+					<p id="zone_p2"><b>SERVICE</b> ZONE</p>
+				</div>
+				
+				<div class="service_all service1">
+					<a href="#">
+						<p id="p1">아이디 찾기</p>
+						<p id="p2">본인 아이디를 잊어버리셨나요?</p>
+					</a>
+				</div>
+				
+				<div class="service_all service2">
+					<a href="#">
+						<p id="p1">비밀번호 찾기</p>
+						<p id="p2">본인 비밀번호를 잊어버리셨나요?</p>
+					</a>
+				</div>
+				
+				<div class="service_all service3">
+					<a href="#">
+						<p id="p1">공동인증서 등록</p>
+						<p id="p2">등록된 인증서가 존재하지 않으신가요?</p>
+					</a>
+				</div>
+				
+				<div class="service_all service4">
+					<a href="#">
+						<p id="p1">공동인증서 변경</p>
+						<p id="p2">기존 인증서를 변경하고 싶으신가요?</p>
+					</a>
+				</div>
+				
+			</div>
 		</div>
 	</div>
 </body>
