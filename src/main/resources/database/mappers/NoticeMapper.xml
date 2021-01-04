@@ -6,7 +6,19 @@
 <mapper namespace="com.project.portal.board.notice.NoticeMapper">
 
 	<select id="getList" resultType="NoticeVO">
-		select * from NOTICE
+		select * from notice
 	</select>
+	
+	<select id="getOne" parameterType="NoticeVO" resultMap="getOneResult">
+		select * from notice where num=#{num}
+	</select>
+	
+	<resultMap type="NoticeVO" id="getOneResult">
+		<id column="num" property="num"/>
+		<result column="writer" property="writer"/>	
+		<result column="title" property="title"/>	
+		<result column="contents" property="contents"/>	
+		<result column="regDate" property="regDate"/>
+	</resultMap>
 	
 </mapper>

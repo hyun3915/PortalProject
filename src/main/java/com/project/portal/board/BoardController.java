@@ -22,5 +22,11 @@ public class BoardController {
 		List<BoardVO> ar = noticeService.getList();
 		return ar;
 	}
+	
+	@GetMapping("boardSelect")
+	public BoardVO boardSelect(BoardVO boardVO) throws Exception{
+		boardVO = noticeService.getOne(boardVO);
+		return boardVO;
+	}
 
 }

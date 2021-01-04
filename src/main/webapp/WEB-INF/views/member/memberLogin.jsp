@@ -33,7 +33,7 @@
 		width: 500px;
 		height: 600px;
 		background-color: #094b9f;
-		margin-top: 100px;
+		margin-top: 115px;
 		margin-bottom: 190px;
 	}
 	

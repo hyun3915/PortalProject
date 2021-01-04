@@ -8,5 +8,7 @@ import org.springframework.stereotype.Service;
 public interface BoardService {
 	
 	public List<BoardVO> getList() throws Exception;
+	
+	public BoardVO getOne(BoardVO boardVO) throws Exception;
 
 }

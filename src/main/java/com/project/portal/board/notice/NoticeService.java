@@ -20,4 +20,8 @@ public class NoticeService implements BoardService{
 		return noticeMapper.getList();
 	}
 	
+	public BoardVO getOne(BoardVO boardVO) throws Exception{
+		return noticeMapper.getOne(boardVO);
+	}
+	
 }

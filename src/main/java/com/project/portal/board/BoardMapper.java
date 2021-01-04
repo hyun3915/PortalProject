@@ -5,5 +5,7 @@ import java.util.List;
 public interface BoardMapper {
 	
 	public List<BoardVO> getList() throws Exception;
+	
+	public BoardVO getOne(BoardVO boardVO) throws Exception;
 
 }

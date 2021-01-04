@@ -222,7 +222,7 @@
 					<a>이러닝</a>
 				</li>
 				<li class="nav_sub03">
-					<a>게시판</a>
+					<a href="${pageContext.request.contextPath}/notice/noticeList">게시판</a>
 				</li>
 				
 			</ul>

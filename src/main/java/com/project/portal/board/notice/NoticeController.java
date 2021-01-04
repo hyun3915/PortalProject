@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.ModelAndViewDefiningException;
 
 import com.project.portal.board.BoardVO;
 
@@ -28,6 +30,16 @@ public class NoticeController {
 		List<BoardVO> ar = noticeService.getList();
 		model.addAttribute("list", ar);
 		return "board/boardList";
+	}
+	
+	@GetMapping("noticeSelect")
+	public ModelAndView getOne(BoardVO boardVO) throws Exception{
+		boardVO = noticeService.getOne(boardVO);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("vo", boardVO);
+		mv.setViewName("board/boardSelect");
+		
+		return mv;
 	}
 	
 }
