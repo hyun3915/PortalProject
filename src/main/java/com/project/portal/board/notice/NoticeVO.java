@@ -8,5 +8,9 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class NoticeVO extends BoardVO{
+	
+	private String category;
+	private String department;
+	private String campus;
 
 }

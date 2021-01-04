@@ -14,28 +14,19 @@
 <c:import url="../template/header.jsp"></c:import>
 
 <div class="container">
-  <h3>Board List Page V1</h3>
-  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
- 	<form action="./${board}List" id="frm">
- 	</form>
+  <h2>공지사항</h2>
     <table class="table table-hover">
-	  		<tr>
-	  			<td>Num</td>
-		  		<td>Title</td>
-		  		<td>Writer</td>
-		  		<td>Date</td>
-	  		</tr>
 	  		
-	  		<c:forEach items="${list}" var="vo">
-	  			<tr>
-	  				<td>${vo.num}</td>
-	  				<td><a href="${board}Select?num=${vo.num}">${vo.title}</a></td>
-	  				<td>${vo.writer}</td>
-	  				<td>${vo.regDate}</td>
-	  			</tr>
-	  		</c:forEach>
-	  		
-	  	</table>
+		<c:forEach items="${list}" var="vo">
+			<tr>
+				<td>${vo.num}</td>
+				<td>${vo.category}</td>
+				<td><a href="${board}Select?num=${vo.num}">${vo.title}</a></td>
+				<td>${vo.department}</td>
+				<td>${vo.regDate}</td>
+			</tr>
+		</c:forEach>
+	</table>
   
 </div>
 </body>
