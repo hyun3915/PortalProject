@@ -67,7 +67,7 @@
 			</tr>
 		</c:forEach>
 	</table>
-  
+  <a href="./${board}Write" class="btn btn-danger">WRITE</a>
 </div>
 </body>
 </html>

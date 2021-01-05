@@ -13,6 +13,11 @@
 		select * from notice where num=#{num}
 	</select>
 	
+	<insert id="setInsert" parameterType="NoticeVO" useGeneratedKeys="true" keyProperty="num">
+		insert into notice (num, category, department, campus, title, contents, regDate)
+		values(#{num}, #{category}, #{department}, #{campus}, #{title}, #{contents}, sysdate())
+	</insert>
+	
 	<resultMap type="NoticeVO" id="getOneResult">
 		<id column="num" property="num"/>
 		<result column="writer" property="writer"/>	
@@ -20,5 +25,7 @@
 		<result column="contents" property="contents"/>	
 		<result column="regDate" property="regDate"/>
 	</resultMap>
+	
+	
 	
 </mapper>

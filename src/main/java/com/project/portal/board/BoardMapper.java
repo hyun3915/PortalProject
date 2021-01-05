@@ -7,5 +7,7 @@ public interface BoardMapper {
 	public List<BoardVO> getList() throws Exception;
 	
 	public BoardVO getOne(BoardVO boardVO) throws Exception;
+	
+	public int setInsert(BoardVO boardVO) throws Exception;
 
 }

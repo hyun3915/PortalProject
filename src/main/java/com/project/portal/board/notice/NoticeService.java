@@ -23,5 +23,14 @@ public class NoticeService implements BoardService{
 	public BoardVO getOne(BoardVO boardVO) throws Exception{
 		return noticeMapper.getOne(boardVO);
 	}
+
+	@Override
+	public int setInsert(BoardVO boardVO) throws Exception {
+		
+		int result = noticeMapper.setInsert(boardVO);
+		System.out.println("Num : "+boardVO.getNum());
+		
+		return result;
+	}
 	
 }
