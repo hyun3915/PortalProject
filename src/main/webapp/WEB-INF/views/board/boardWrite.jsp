@@ -67,19 +67,19 @@
   	
   	<tr class="group">
   		<td>
-  		<textarea class="form-control" rows="5" id="contents" name ="contents"></textarea>
+  		<textarea class="form-control" id="contents" name ="contents"></textarea>
   		</td>
   	</tr>
   	
   </table>
 
 	<div style="text-align: right;" >
-		<input type="button" class="btn btn-write" id="write" value="작성">
+		<input type="button" class="btn btn-default" id="write" value="작성">
 		<input type="button" value="취소" class="btn btn-cancel" id="cancel">
 	</div>
  </form>
 </div>
-
+<c:import url="../template/footer.jsp"></c:import>
 <script type="text/javascript">
 $('#contents').summernote({
 	height:300,	
