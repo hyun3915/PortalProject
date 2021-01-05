@@ -26,6 +26,9 @@
 <c:import url="../template/header.jsp"></c:import>
 
 <div class="container">
+	<form action="" id="frm">
+		<input type="hidden" value="${vo.num}" name="num">
+	</form>
 <div class="search_title">
   <h2>공지게시판</h2>
 </div>
@@ -46,7 +49,10 @@
 	
 </table>
 
-  <input type="button" title="${vo.num}" value="목록" class="btn btn-list" id="list">
+	<input type="button" title="${vo.num}" value="목록" class="btn btn-list" id="list">
+	
+	<button class="btn btn-list go" title="Update">수정</button>
+	<button class="btn btn-list go" title="Delete">삭제</button>
 
 </div>
 <c:import url="../template/footer.jsp"></c:import>
@@ -54,8 +60,21 @@
 <script type="text/javascript">
 
    $("#list").click(function() {
-	   location.href="./qnaList";
+	   location.href="./noticeList";
    });
+
+   $(".go").click(function(){
+		var board = '${board}';
+		var t = $(this).attr("title");
+
+		$("#frm").attr("action", board+t);
+
+		if(t=='Delete') {
+			$("#frm").attr("method","get");
+		}
+
+		$("#frm").submit();
+	});
    
 </script>
 

@@ -18,6 +18,14 @@
 		values(#{num}, #{category}, #{department}, #{campus}, #{title}, #{contents}, sysdate())
 	</insert>
 	
+	<update id="setUpdate" parameterType="NoticeVO">
+		update notice set category=#{category}, department=#{department}, campus=#{campus}, title=#{title}, contents=#{contents} where num=#{num}
+	</update>
+	
+	<delete id="setDelete" parameterType="NoticeVO">
+		delete from notice where num=#{num}
+	</delete>
+	
 	<resultMap type="NoticeVO" id="getOneResult">
 		<id column="num" property="num"/>
 		<result column="writer" property="writer"/>	

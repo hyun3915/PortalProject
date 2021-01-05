@@ -19,10 +19,6 @@ public class NoticeService implements BoardService{
 		// TODO Auto-generated method stub
 		return noticeMapper.getList();
 	}
-	
-	public BoardVO getOne(BoardVO boardVO) throws Exception{
-		return noticeMapper.getOne(boardVO);
-	}
 
 	@Override
 	public int setInsert(BoardVO boardVO) throws Exception {
@@ -32,5 +28,25 @@ public class NoticeService implements BoardService{
 		
 		return result;
 	}
+
+	@Override
+	public int setUpdate(BoardVO boardVO) throws Exception {
+		// TODO Auto-generated method stub
+		return noticeMapper.setUpdate(boardVO);
+	}
+
+	@Override
+	public int setDelete(BoardVO boardVO) throws Exception {
+		// TODO Auto-generated method stub
+		return noticeMapper.setDelete(boardVO);
+	}
+
+	@Override
+	public BoardVO getOne(BoardVO boardVO) throws Exception {
+		// TODO Auto-generated method stub
+		return noticeMapper.getOne(boardVO);
+	}
+	
+	
 	
 }
