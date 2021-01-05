@@ -66,7 +66,7 @@
   	</tr>
   	
   	<tr class="group">
-  		<td>
+  		<td colspan="2">
   		<textarea class="form-control" id="contents" name ="contents"></textarea>
   		</td>
   	</tr>
@@ -82,6 +82,7 @@
 <c:import url="../template/footer.jsp"></c:import>
 <script type="text/javascript">
 $('#contents').summernote({
+	width:1140,
 	height:300,	
 });
 

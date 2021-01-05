@@ -64,7 +64,7 @@
   	</tr>
   	
   	<tr class="group">
-  		<td>
+  		<td colspan="2">
   		<label for="contents">Contents:</label>
   		<textarea class="form-control" id="contents" name ="contents">${vo.contents}</textarea>
   		</td>
@@ -82,6 +82,7 @@
 <script type="text/javascript">
 
 	$('#contents').summernote({
+		width: 1140,
 	    height: 300
 	});
 	
