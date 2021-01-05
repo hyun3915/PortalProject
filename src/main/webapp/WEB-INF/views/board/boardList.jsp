@@ -67,7 +67,7 @@
 			</tr>
 		</c:forEach>
 	</table>
-  <a href="./${board}Write" class="btn btn-default">글쓰기</a>
+  <a href="./${board}Write" class="btn btn-default" style="float: right;">글쓰기</a>
 </div>
 <c:import url="../template/footer.jsp"></c:import>
 </body>
