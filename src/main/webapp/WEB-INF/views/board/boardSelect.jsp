@@ -5,7 +5,18 @@
 <html>
 <head>
 <style type="text/css">
-
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: "맑은 고딕", "Nanum Gothic";
+		text-decoration: none;
+	}
+	
+	table{
+   		width: 1140px;
+		line-height: 180%;
+	}
+	
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -16,7 +27,7 @@
 
 <div class="container">
 <div class="search_title">
-  <h2>문의게시판</h2>
+  <h2>공지게시판</h2>
 </div>
 
 <table class="table">
@@ -26,7 +37,7 @@
 	</tr>
 	
 	<tr class="group">
-		<td>${vo.campus}&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;${vo.department}</td>
+		<td colspan="2">${vo.campus}&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;${vo.department}</td>
 	</tr>
 	
 	<tr class="group">
