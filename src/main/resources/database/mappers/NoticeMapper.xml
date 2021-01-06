@@ -6,7 +6,7 @@
 <mapper namespace="com.project.portal.board.notice.NoticeMapper">
 
 	<select id="getList" resultType="NoticeVO">
-		select * from notice
+		select * from notice order by num desc;
 	</select>
 	
 	<select id="getOne" parameterType="NoticeVO" resultMap="getOneResult">

@@ -8,18 +8,26 @@
 <style type="text/css">
 
 	*{
-		margin : 0;
-		padding : 0;
+		margin: 0;
+		padding: 0;
+		font-family: "맑은 고딕", "Nanum Gothic";
+		text-decoration: none;
 	}
 	
 	.container{
 		width: 1300px;
-		height: 700px;
+		height: 750px;
 		margin: 0 auto;
 	}
 	
 	.table{
 		width: 1300px;
+		background-color: #fff;
+		
+	}
+	
+	.table tr :hover{
+		background-color:#E8F2FE;
 	}
 	
 	.container h2{
@@ -64,7 +72,7 @@
 <c:import url="../template/header.jsp"></c:import>
 
 <div class="container">
-  <h2>공지사항</h2>
+  <h2 style="padding-top: 20px;">공지사항</h2>
     <table class="table table-hover">
 		<c:forEach items="${list}" var="vo">
 			<tr>
@@ -77,6 +85,7 @@
 		</c:forEach>
 	</table>
   <a href="./${board}Write" class="btn btn-default" style="float: right; padding-top: 8px;">글쓰기</a>
+
 </div>
 <c:import url="../template/footer.jsp"></c:import>
 </body>

@@ -20,12 +20,13 @@
 	.container{
 		width: 1140px;
 		margin-bottom: 50px;
+		padding-top: 20px;
 	}
 	
 	.container_title{
 		width: 1140px;
 		height: 50px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 	
 	.title{
@@ -39,6 +40,7 @@
 	}
 	
 	.btn{
+		margin-top: 100px;
 		margin-left: 10px;
 		width: 70px;
 		height: 40px;
@@ -59,7 +61,7 @@
 		<input type="hidden" value="${vo.num}" name="num">
 	</form>
 <div class="container_title">
-  <h2>공지게시판</h2>
+  <h2>공지사항</h2>
 </div>
 
 <table class="table">
