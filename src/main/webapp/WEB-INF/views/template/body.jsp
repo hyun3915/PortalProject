@@ -13,6 +13,7 @@
 	
 	.body_top{
 		background: url("./images/top_banner_bg.gif");
+		margin-top: 20px;
 	}
 	
 	.top_service{
