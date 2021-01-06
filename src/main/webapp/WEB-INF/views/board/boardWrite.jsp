@@ -5,6 +5,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+.btn{
+		margin-left: 10px;
+		width: 70px;
+		height: 40px;
+		line-height: 38px;
+		color: #1a1a1a;
+	}
+</style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <c:import url="../template/bootStrap.jsp"></c:import>
@@ -75,7 +84,7 @@
 
 	<div style="text-align: right;" >
 		<input type="button" class="btn btn-default" id="write" value="작성">
-		<input type="button" value="취소" class="btn btn-cancel" id="cancel">
+		<input type="button" value="취소" class="btn btn-default" id="cancel">
 	</div>
  </form>
 </div>

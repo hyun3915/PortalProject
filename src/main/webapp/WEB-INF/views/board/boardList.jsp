@@ -45,6 +45,15 @@
 		color: black;
 		text-decoration: none;
 	}
+	
+	.btn{
+		margin-left: 10px;
+		width: 70px;
+		height: 40px;
+		line-height: 38px;
+		color: #1a1a1a;
+	}
+	
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -67,7 +76,7 @@
 			</tr>
 		</c:forEach>
 	</table>
-  <a href="./${board}Write" class="btn btn-default" style="float: right;">글쓰기</a>
+  <a href="./${board}Write" class="btn btn-default" style="float: right; padding-top: 8px;">글쓰기</a>
 </div>
 <c:import url="../template/footer.jsp"></c:import>
 </body>

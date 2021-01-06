@@ -17,6 +17,35 @@
 		line-height: 180%;
 	}
 	
+	.container{
+		width: 1140px;
+		margin-bottom: 50px;
+	}
+	
+	.container_title{
+		width: 1140px;
+		height: 50px;
+		margin-bottom: 20px;
+	}
+	
+	.title{
+		font-size: 17px;
+    	font-weight: 500;
+    	color: #1a1a1a;
+	}
+	
+	.date{
+		text-align: right;
+	}
+	
+	.btn{
+		margin-left: 10px;
+		width: 70px;
+		height: 40px;
+		line-height: 38px;
+		color: #1a1a1a;
+	}
+	
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -29,14 +58,14 @@
 	<form action="" id="frm">
 		<input type="hidden" value="${vo.num}" name="num">
 	</form>
-<div class="search_title">
+<div class="container_title">
   <h2>공지게시판</h2>
 </div>
 
 <table class="table">
 	<tr class="group">
-		<td>${vo.title}</td>
-		<td>${vo.regDate}</td>
+		<td class="title">${vo.title}</td>
+		<td class="date">${vo.regDate}</td>
 	</tr>
 	
 	<tr class="group">
@@ -44,15 +73,14 @@
 	</tr>
 	
 	<tr class="group">
-		<td id="contents">${vo.contents}</td>
+		<td id="contents" style="border-top: none; padding-top: 30px;">${vo.contents}</td>
 	</tr>
 	
 </table>
-
-	<input type="button" title="${vo.num}" value="목록" class="btn btn-list" id="list">
 	
-	<button class="btn btn-list go" title="Update">수정</button>
-	<button class="btn btn-list go" title="Delete">삭제</button>
+	<button class="btn btn-default go" title="${vo.num}">☰&nbsp;목록</button>
+	<button class="btn btn-default go" title="Update" style="float: right;">수정</button>
+	<button class="btn btn-default go" title="Delete" style="float: right;">삭제</button>
 
 </div>
 <c:import url="../template/footer.jsp"></c:import>

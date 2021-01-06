@@ -15,6 +15,7 @@
 	}
 	
 	footer{
+		padding-top: 30px;
 		width: 1300px;
 		height: 110px;
 		margin: 0 auto;
