@@ -30,7 +30,7 @@ class NoticeMapperTest {
 		
 	}
 	
-	@Test
+	//@Test
 	void setInsertTest() throws Exception{
 			
 			for(int i=0; i<60; i++) {

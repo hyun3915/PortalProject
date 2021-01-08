@@ -1,7 +1,6 @@
 package com.project.portal.board;
 
 import java.util.List;
-
 import com.project.portal.util.Pager;
 
 public interface BoardMapper {

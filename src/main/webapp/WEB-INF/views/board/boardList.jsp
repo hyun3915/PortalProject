@@ -87,9 +87,10 @@
 <body>
 
 <c:import url="../template/header.jsp"></c:import>
+<form action="./${board}List" id="frm">
+<input type="hidden" name="curPage" id="curPage" value=1>
 
 <div class="container">
-<input type="hidden" name="curPage" id="curPage" value=1>
   <h2 style="padding-top: 20px;">공지사항</h2>
     <table class="table table-hover">
 		<c:forEach items="${list}" var="vo">
@@ -121,6 +122,15 @@
 	<a href="./${board}Write" class="btn btn-default" style="float: right; padding-top: 8px;">글쓰기</a>
 
 </div>
+	</form>
 <c:import url="../template/footer.jsp"></c:import>
+
+<script type="text/javascript">
+$(".list").click(function(){
+	var curPage = $(this).attr("title");
+	$("#curPage").val(curPage);
+	$("#frm").submit();
+});
+</script>
 </body>
 </html>

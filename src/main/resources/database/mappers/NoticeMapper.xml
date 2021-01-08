@@ -4,17 +4,35 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.project.portal.board.notice.NoticeMapper">
-
+	
+	<sql id="getSearch">
+		<choose>
+			<when test="kind=='title'">
+				title
+			</when>
+			<when test="kind=='department'">
+				department
+			</when>
+			<otherwise>
+				contents
+			</otherwise>
+		</choose>
+		like concat('%', #{search},'%') and num>0
+	</sql>
+	
+	<select id="getCount" resultType="Long" parameterType="Pager">
+		select count(num) from notice where
+		<include refid="getSearch"></include>
+	</select>
+	
 	<select id="getList" resultType="NoticeVO" parameterType="Pager">
-		select * from notice order by num desc;
+		select * from notice where
+		<include refid="getSearch"></include>
+		order by num desc limit #{startRow}, #{perPage}
 	</select>
 	
 	<select id="getOne" parameterType="NoticeVO" resultMap="getOneResult">
 		select * from notice where num=#{num}
-	</select>
-	
-	<select id="getCount" resultType="Long" parameterType="Pager">
-		select count(num) from notice
 	</select>
 	
 	<insert id="setInsert" parameterType="NoticeVO" useGeneratedKeys="true" keyProperty="num">
