@@ -16,7 +16,6 @@
 	
 	.container{
 		width: 1300px;
-		height: 1000px;
 		margin: 0 auto;
 	}
 	
@@ -90,6 +89,7 @@
 <c:import url="../template/header.jsp"></c:import>
 
 <div class="container">
+<input type="hidden" name="curPage" id="curPage" value=1>
   <h2 style="padding-top: 20px;">공지사항</h2>
     <table class="table table-hover">
 		<c:forEach items="${list}" var="vo">
