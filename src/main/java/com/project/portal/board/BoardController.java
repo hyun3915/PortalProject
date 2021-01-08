@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.project.portal.board.notice.NoticeService;
+import com.project.portal.util.Pager;
 
 @Controller
 @RequestMapping("/board/**")
@@ -17,9 +18,9 @@ public class BoardController {
 	private NoticeService noticeService;
 	
 	@GetMapping("board/boardList")
-	public List<BoardVO> boardList() throws Exception{
+	public List<BoardVO> boardList(Pager pager) throws Exception{
 		System.out.println("Board List");
-		List<BoardVO> ar = noticeService.getList();
+		List<BoardVO> ar = noticeService.getList(pager);
 		return ar;
 	}
 	

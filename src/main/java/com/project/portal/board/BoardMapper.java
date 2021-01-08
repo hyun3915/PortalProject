@@ -2,9 +2,13 @@ package com.project.portal.board;
 
 import java.util.List;
 
+import com.project.portal.util.Pager;
+
 public interface BoardMapper {
 	
-	public List<BoardVO> getList() throws Exception;
+	public List<BoardVO> getList(Pager pager) throws Exception;
+	
+	public long getCount(Pager pager) throws Exception;
 	
 	public BoardVO getOne(BoardVO boardVO) throws Exception;
 	

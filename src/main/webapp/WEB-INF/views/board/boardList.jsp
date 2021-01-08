@@ -16,7 +16,7 @@
 	
 	.container{
 		width: 1300px;
-		height: 750px;
+		height: 1000px;
 		margin: 0 auto;
 	}
 	
@@ -62,6 +62,24 @@
 		color: #1a1a1a;
 	}
 	
+	.center {
+		text-align: center;
+	}
+
+	.pagination {
+		display: inline-block;
+	}
+
+	.pagination a {
+		color: black;
+		float: left;
+		padding: 8px 16px;
+		text-decoration: none;
+		transition: background-color .3s;
+		border: 1px solid #ddd;
+		margin: 0 4px;
+	}
+	
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -84,7 +102,23 @@
 			</tr>
 		</c:forEach>
 	</table>
-  <a href="./${board}Write" class="btn btn-default" style="float: right; padding-top: 8px;">글쓰기</a>
+
+	<!-- Page -->
+	<div class="center">
+	<ul class="pagination">
+		<c:if test="${pager.before}">
+			<li><a href="#" class="list" title="${pager.startNum-1}">&laquo;</a></li>
+		</c:if>
+		<c:forEach begin="${pager.startNum}" end="${pager.lastNum}" var="i">
+			<li><a href="#" class="list" title="${i}">${i}</a></li>
+		</c:forEach>
+		<c:if test="${pager.after}">
+			<li><a href="#" class="list" title="${pager.lastNum+1}">&raquo;</a></li>
+		</c:if>
+	</ul>
+	</div>
+
+	<a href="./${board}Write" class="btn btn-default" style="float: right; padding-top: 8px;">글쓰기</a>
 
 </div>
 <c:import url="../template/footer.jsp"></c:import>

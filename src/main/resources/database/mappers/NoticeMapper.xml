@@ -5,12 +5,16 @@
 
 <mapper namespace="com.project.portal.board.notice.NoticeMapper">
 
-	<select id="getList" resultType="NoticeVO">
+	<select id="getList" resultType="NoticeVO" parameterType="Pager">
 		select * from notice order by num desc;
 	</select>
 	
 	<select id="getOne" parameterType="NoticeVO" resultMap="getOneResult">
 		select * from notice where num=#{num}
+	</select>
+	
+	<select id="getCount" resultType="Long" parameterType="Pager">
+		select count(num) from notice
 	</select>
 	
 	<insert id="setInsert" parameterType="NoticeVO" useGeneratedKeys="true" keyProperty="num">

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.project.portal.board.BoardService;
 import com.project.portal.board.BoardVO;
+import com.project.portal.util.Pager;
 
 @Service
 public class NoticeService implements BoardService{
@@ -15,9 +16,13 @@ public class NoticeService implements BoardService{
 	private NoticeMapper noticeMapper;
 	
 	@Override
-	public List<BoardVO> getList() throws Exception {
-		// TODO Auto-generated method stub
-		return noticeMapper.getList();
+	public List<BoardVO> getList(Pager pager) throws Exception {
+		
+		pager.makeRow();
+		long totalCount = noticeMapper.getCount(pager);
+		pager.makePage(totalCount);
+		
+		return noticeMapper.getList(pager);
 	}
 
 	@Override

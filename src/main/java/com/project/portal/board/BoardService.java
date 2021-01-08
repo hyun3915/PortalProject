@@ -5,11 +5,12 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.project.portal.board.notice.NoticeVO;
+import com.project.portal.util.Pager;
 
 @Service
 public interface BoardService {
 	
-	public List<BoardVO> getList() throws Exception;
+	public List<BoardVO> getList(Pager pager) throws Exception;
 	
 	public BoardVO getOne(BoardVO boardVO) throws Exception;
 	

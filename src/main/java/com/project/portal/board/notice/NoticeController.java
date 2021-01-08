@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.ModelAndViewDefiningException;
 
 import com.project.portal.board.BoardVO;
+import com.project.portal.util.Pager;
 
 @Controller
 @RequestMapping("/notice/**")
@@ -27,9 +28,10 @@ public class NoticeController {
 	private NoticeService noticeService;
 	
 	@GetMapping("noticeList")
-	public String getList(Model model) throws Exception{
-		List<BoardVO> ar = noticeService.getList();
+	public String getList(Model model, Pager pager) throws Exception{
+		List<BoardVO> ar = noticeService.getList(pager);
 		model.addAttribute("list", ar);
+		model.addAttribute("pager", pager);
 		return "board/boardList";
 	}
 	
