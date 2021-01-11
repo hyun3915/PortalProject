@@ -82,6 +82,7 @@
 	
 	.sidenav2 {
 		width: 250px;
+		z-index: 1;
 		position: fixed;
 		z-index: 1;
 		top: 137px;
