@@ -8,6 +8,9 @@
 		<typeAlias type="com.project.portal.board.BoardVO" alias="BoardVO"/>
 		<typeAlias type="com.project.portal.board.notice.NoticeVO" alias="NoticeVO"/>
 		<typeAlias type="com.project.portal.member.MemberVO" alias="MemberVO"/>
+		
+		<typeAlias type="com.project.portal.board.file.FileVO" alias="FileVO"/>
+		
 		<typeAlias type="com.project.portal.util.Pager" alias="Pager"/>
 		<typeAlias type="java.lang.Long" alias="Long"/>
 	</typeAliases>
