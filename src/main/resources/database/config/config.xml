@@ -10,6 +10,7 @@
 		<typeAlias type="com.project.portal.member.MemberVO" alias="MemberVO"/>
 		
 		<typeAlias type="com.project.portal.board.file.FileVO" alias="FileVO"/>
+		<typeAlias type="java.util.List" alias="List"/>
 		
 		<typeAlias type="com.project.portal.util.Pager" alias="Pager"/>
 		<typeAlias type="java.lang.Long" alias="Long"/>

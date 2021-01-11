@@ -59,12 +59,12 @@ public class NoticeService implements BoardService{
 		return noticeMapper.getOne(boardVO);
 	}
 
-	@Override
-	public int setInsert(BoardVO boardVO, MultipartFile [] files) throws Exception {
+	
+	public int setInsert2(NoticeVO noticeVO, MultipartFile [] files) throws Exception {
 		// TODO Auto-generated method stub
 		
-		int result = noticeMapper.setInsert(boardVO);
-		System.out.println("Num : "+boardVO.getNum());
+		int result = noticeMapper.setInsert(noticeVO);
+		System.out.println("Num : "+noticeVO.getNum());
 		
 		File file = filePathGenerator.getUseResourceLoader(this.filePath);
 		
@@ -79,7 +79,7 @@ public class NoticeService implements BoardService{
 			FileVO fileVO = new FileVO();
 			fileVO.setFileName(fileName);
 			fileVO.setOriName(multipartFile.getOriginalFilename());
-			fileVO.setNum(boardVO.getNum());
+			fileVO.setNum(noticeVO.getNum());
 			
 			result = noticeMapper.setInsertFile(fileVO);
 		}
@@ -90,6 +90,12 @@ public class NoticeService implements BoardService{
 	public FileVO getFile(FileVO fileVO) throws Exception {
 		// TODO Auto-generated method stub
 		return noticeMapper.getFile(fileVO);
+	}
+
+	@Override
+	public int setInsert(BoardVO boardVO, MultipartFile[] files) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	
