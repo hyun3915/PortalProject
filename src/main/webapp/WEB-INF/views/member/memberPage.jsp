@@ -105,7 +105,6 @@ h1 { font-family: 'Merienda', 'Trebuchet MS', Verdana, sans-serif; font-size: 2.
 #nav li ul li a:hover {
   background: #394963;
 }
-	
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -116,59 +115,56 @@ h1 { font-family: 'Merienda', 'Trebuchet MS', Verdana, sans-serif; font-size: 2.
 <div class="container">
 
   <div id="w">
-    <h1>CSS3/jQuery Accordion Nav Menu</h1>
     
     <nav>
       <ul id="nav">
-        <li><a href="#">Animation</a>
+        <li><a href="#">개인정보</a>
           <ul>
-            <li><a href="http:/www.google.com/search?q=design+cartoons+animation">Cartoons</a></li>
-            <li><a href="http:/www.google.com/search?q=design+comic+strips+inspiration">Comic Strips</a></li>
-            <li><a href="http:/www.google.com/search?q=how+to+clip+video+footage">Video Clips</a></li>
-            <li><a href="http:/www.google.com/search?q=design+create+animated+gifs">Web GIFs</a></li>
+            <li><a href="#">신상정보관리</a></li>
+            <li><a href="#">학생생활정보</a></li>
+            <li><a href="#">가족사항</a></li>
+            <li><a href="#">학적변동내역</a></li>
           </ul>
         </li>
-        <li><a href="#">Graphic Design</a>
+        <li><a href="#">수강</a>
           <ul>
-            <li><a href="http:/www.google.com/search?q=photoshop+tutorials+graphics+design">Adobe Photoshop</a></li>
-            <li><a href="http:/www.google.com/search?q=digital+branding+graphics+logos">Branding &amp; Logos</a></li>
-            <li><a href="http:/www.google.com/search?q=graphics+design+marketing">Digital Marketing</a></li>
-            <li><a href="http:/www.google.com/search?q=graphic+design+illustrations">Illustrations</a></li>
-            <li><a href="http:/www.google.com/search?q=infographics+inspiration">Infographics</a></li>
-            <li><a href="http:/www.google.com/search?q=product+design+inspiration">Product Design</a></li>
+            <li><a href="#">수강내역조회/출력</a></li>
+            <li><a href="#">시간표조회/출력</a></li>
+            <li><a href="#">시간표출력(통합강좌용)</a></li>
           </ul>
         </li>
-        <li><a href="#">Digital Photography</a>
+        <li><a href="#">성적</a>
           <ul>
-            <li><a href="http:/www.google.com/search?q=cityscape+photography">Cityscapes</a></li>
-            <li><a href="http:/www.google.com/search?q=water+ocean+photography">Oceans</a></li>
-            <li><a href="http:/www.google.com/search?q=wide+angle+lens+photography">Wide-Angle Lens</a></li>
-            <li><a href="http:/www.google.com/search?q=wildlife+photography">Wildlife</a></li>
+            <li><a href="#">강의평가</a></li>
+            <li><a href="#">기이수성적조회/출력</a></li>
+            <li><a href="#">당학기성적조회/출력</a></li>
           </ul>
         </li>
-        <li><a href="#">Print &amp; Identity</a>
+        <li><a href="#">등록</a>
           <ul>
-            <li><a href="http:/www.google.com/search?q=branding+identity+print+design">Branding</a></li>
-            <li><a href="http:/www.google.com/search?q=business+cards+design">Business Cards</a></li>
-            <li><a href="http:/www.google.com/search?q=print+design+letterpress">Letterpress</a></li>
-            <li><a href="http:/www.google.com/search?q=print+poster+artwork">Poster Art</a></li>
+            <li><a href="#">장학선발이력</a></li>
+            <li><a href="#">등록금납부이력</a></li>
+            <li><a href="#">등록금고지서출력</a></li>
+            <li><a href="#">성적장학 신청</a></li>
+            <li><a href="#">특별장학 신청</a></li>
+            <li><a href="#">등록금 분납신청</a></li>
+            <li><a href="#">마일리지 장학금</a></li>
           </ul>
         </li>
-        <li><a href="#">Programming</a>
+        <li><a href="#">학생생활상담</a>
           <ul>
-            <li><a href="http:/www.google.com/search?q=learn+css3+web+development">CSS3</a></li>
-            <li><a href="http:/www.google.com/search?q=learn+html5+web+development">HTML5</a></li>
-            <li><a href="http:/www.google.com/search?q=javascript+jquery+tutorials">JavaScript &amp; jQuery</a></li>
-            <li><a href="http:/www.google.com/search?q=web+development+mysql">MySQL Databases</a></li>
-            <li><a href="http:/www.google.com/search?q=wordpress+programming">Wordpress CMS</a></li>
+            <li><a href="#">상담신청</a></li>
           </ul>
         </li>
-        <li><a href="#">Web Design</a>
+        <li><a href="#">설문조사</a>
           <ul>
-            <li><a href="http:/www.google.com/search?q=web+design+icons">Icons</a></li>
-            <li><a href="http:/www.google.com/search?q=web+design+tutorials">Tutorials</a></li>
-            <li><a href="http:/www.google.com/search?q=web+design+user+interface">User Interfaces</a></li>
-            <li><a href="http:/www.google.com/search?q=web+design">Website Layouts</a></li>
+            <li><a href="#">학생설문</a></li>
+            <li><a href="#">학생회비 설문조사</a></li>
+          </ul>
+        </li>
+        <li><a href="#">졸업</a>
+          <ul>
+            <li><a href="#">졸업진단</a></li>
           </ul>
         </li>
       </ul>
