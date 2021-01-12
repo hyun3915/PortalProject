@@ -60,7 +60,7 @@
 	#nav li { }
 
 	#nav > li > a { 
-		display: block; 
+		display: block;
 		padding: 16px 18px;
 		font-size: 16px;
 		font-weight: 600;
@@ -99,7 +99,7 @@
   <div id="w">
     <nav>
       <ul id="nav">
-        <li><a href="#" style="border-top: 4px solid #072F72;;">개인정보</a>
+        <li><a href="#" style="border-top: 4px solid #072F72;">개인정보<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
             <li><a href="#">신상정보관리</a></li>
             <li><a href="#">학생생활정보</a></li>
@@ -107,21 +107,21 @@
             <li><a href="#">학적변동내역</a></li>
           </ul>
         </li>
-        <li><a href="#">수강</a>
+        <li><a href="#">수강<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
             <li><a href="#">수강내역조회/출력</a></li>
             <li><a href="#">시간표조회/출력</a></li>
             <li><a href="#">시간표출력(통합강좌용)</a></li>
           </ul>
         </li>
-        <li><a href="#">성적</a>
+        <li><a href="#">성적<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
             <li><a href="#">강의평가</a></li>
             <li><a href="#">기이수성적조회/출력</a></li>
             <li><a href="#">당학기성적조회/출력</a></li>
           </ul>
         </li>
-        <li><a href="#">등록</a>
+        <li><a href="#">등록<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
             <li><a href="#">장학선발이력</a></li>
             <li><a href="#">등록금납부이력</a></li>
@@ -132,18 +132,18 @@
             <li><a href="#">마일리지 장학금</a></li>
           </ul>
         </li>
-        <li><a href="#">학생생활상담</a>
+        <li><a href="#">학생생활상담<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
             <li><a href="#">상담신청</a></li>
           </ul>
         </li>
-        <li><a href="#">설문조사</a>
+        <li><a href="#">설문조사<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
             <li><a href="#">학생설문</a></li>
             <li><a href="#">학생회비 설문조사</a></li>
           </ul>
         </li>
-        <li><a href="#">졸업</a>
+        <li><a href="#">졸업<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
             <li><a href="#">졸업진단</a></li>
           </ul>
