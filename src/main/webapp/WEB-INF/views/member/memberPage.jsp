@@ -52,11 +52,8 @@ h1 { font-family: 'Merienda', 'Trebuchet MS', Verdana, sans-serif; font-size: 2.
 /* nav menu styles */
 #nav { 
   display: block; 
-  width: 280px; 
-  margin: 0 auto; 
-  -webkit-box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
-  -moz-box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
-  box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
+  width: 280px;
+  float: left;
 }
 
 #nav li { }
@@ -64,46 +61,33 @@ h1 { font-family: 'Merienda', 'Trebuchet MS', Verdana, sans-serif; font-size: 2.
 #nav > li > a { 
   display: block; 
   padding: 16px 18px;
-  font-size: 1.3em;
-  font-weight: bold;
-  color: #d4d4d4;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
   text-decoration: none;
-  border-bottom: 1px solid #212121;
-  background-color: #343434;
-  background: -webkit-gradient(linear, left top, left bottom, from(#343434), to(#292929));
-  background: -webkit-linear-gradient(top, #343434, #292929);
-  background: -moz-linear-gradient(top, #343434, #292929);
-  background: -ms-linear-gradient(top, #343434, #292929);
-  background: -o-linear-gradient(top, #343434, #292929);
-  background: linear-gradient(top, #343434, #292929);
+  border-bottom: 0.5px solid #b1b5b5;
+  background-color: white;
 }
 #nav > li > a:hover, #nav > li > a.open { 
-  color: #e9e9e9;
-  border-bottom-color: #384f76;
-  background-color: #6985b5;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6985b5), to(#456397));
-  background: -webkit-linear-gradient(top, #6985b5, #456397);
-  background: -moz-linear-gradient(top, #6985b5, #456397);
-  background: -ms-linear-gradient(top, #6985b5, #456397);
-  background: -o-linear-gradient(top, #6985b5, #456397);
-  background: linear-gradient(top, #6985b5, #456397);
+  color: #238bd7;
+  border-bottom-color: #b1b5b5;
+  background-color: white;
 }
 
-#nav li ul { display: none; background: #4a5b78; }
+#nav li ul { display: none; background: white; }
 
 #nav li ul li a { 
   display: block; 
   background: none;
   padding: 10px 0px;
   padding-left: 30px;
-  font-size: 1.1em;
+  font-size: 14px;
   text-decoration: none;
-  font-weight: bold;
-  color: #e3e7f1;
-  text-shadow: 1px 1px 0px #000;
+  color: #1a1b1c;
 }
 #nav li ul li a:hover {
-  background: #394963;
+  color: #238bd7;
+  font-size: 14px;
 }
 </style>
 <meta charset="UTF-8">
@@ -118,7 +102,7 @@ h1 { font-family: 'Merienda', 'Trebuchet MS', Verdana, sans-serif; font-size: 2.
     
     <nav>
       <ul id="nav">
-        <li><a href="#">개인정보</a>
+        <li><a href="#" style="border-top: 4px solid #238bd7;">개인정보</a>
           <ul>
             <li><a href="#">신상정보관리</a></li>
             <li><a href="#">학생생활정보</a></li>
