@@ -15,7 +15,5 @@ public class NoticeVO extends BoardVO{
 	private String category;
 	private String department;
 	private String campus;
-	
-	private List<FileVO> files;
 
 }

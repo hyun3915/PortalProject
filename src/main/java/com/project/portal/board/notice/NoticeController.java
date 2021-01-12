@@ -2,6 +2,7 @@ package com.project.portal.board.notice;
 
 import java.util.List;
 
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,23 +35,8 @@ public class NoticeController {
 	@Autowired
 	private NoticeService noticeService;
 	
-	@GetMapping("noticeFileDown")
-	public ModelAndView getNoticeFileDown(FileVO fileVO) throws Exception{
-		
-		ModelAndView mv = new ModelAndView();
-		fileVO =  noticeService.getFile(fileVO);
-		
-		System.out.println(fileVO.getFileName());
-		
-		mv.addObject("fileVO", fileVO);
-		mv.addObject("filePath", filePath);
-		mv.setViewName("fileDown");
-		
-		return mv;
-	}
-	
 	@GetMapping("noticeList")
-	public String getList(Model model, Pager pager) throws Exception{
+	public String getList(Pager pager, Model model) throws Exception{
 		List<BoardVO> ar = noticeService.getList(pager);
 		model.addAttribute("list", ar);
 		model.addAttribute("pager", pager);
@@ -76,10 +62,10 @@ public class NoticeController {
 	}
 	
 	@PostMapping("noticeWrite")
-	public ModelAndView setInsert(@Valid NoticeVO noticeVO, MultipartFile [] files) throws Exception{
+	public ModelAndView setInsert(NoticeVO noticeVO) throws Exception{
 		System.out.println("--- Notice Write ---");
 		ModelAndView mv = new ModelAndView();
-		int result = noticeService.setInsert2(noticeVO, files);
+		int result = noticeService.setInsert(noticeVO);
 		
 		String message = "작성 실패했습니다!";
 		if(result>0) {

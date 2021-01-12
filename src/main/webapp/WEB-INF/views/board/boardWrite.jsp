@@ -121,7 +121,6 @@
   	
   	
   </table>
- 	
   	
 	<div style="text-align: right; margin-bottom: 50px;" >
 		<input type="button" class="buttons btn btn-default" id="write" value="작성">

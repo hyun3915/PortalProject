@@ -8,6 +8,7 @@ import com.project.portal.board.BoardVO;
 @Mapper
 public interface NoticeMapper extends BoardMapper{
 	
+
 	public int setInsert(NoticeVO noticeVO) throws Exception;
 
 }
