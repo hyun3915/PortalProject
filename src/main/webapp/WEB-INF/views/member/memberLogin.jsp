@@ -203,7 +203,7 @@
 		<div class="container_1">
 			<div class="login">
 				<h2>
-				<img alt="" src="../images/logo_1.png" width="190px" height="60px">
+				<a href="${pageContext.request.contextPath}/"><img alt="" src="../images/logo_1.png" width="190px" height="60px"></a>
 				<span>을지대학교 <b>포털시스템</b>에<br>오신 것을 환영합니다.</span>
 				</h2>
 				

@@ -6,17 +6,27 @@
 <head>
 
 <style type="text/css">
+
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: "맑은 고딕", "Nanum Gothic";
+		text-decoration: none;
+	}
+
 	.container{
 		width: 1300px;
+		height: 700px;
 		margin: 0 auto;
-		float: left;
+		display: block;
 	}
 	
 	.main_table{
-		width: 1000px;
+		width: 900px;
 		height: 400px;
 		float: right;
 		margin-top: 45px;
+		margin-left: 40px;
 		background-color: yellow;
 	}
 
@@ -37,5 +47,6 @@
 		</table>
 		
 </div>
+<c:import url="../template/footer.jsp"></c:import>
 </body>
 </html>

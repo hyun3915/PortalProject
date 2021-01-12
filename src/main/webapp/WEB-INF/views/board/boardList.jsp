@@ -127,7 +127,7 @@
 	<a href="./${board}Write" class="btn btn-default" style="float: right; padding-top: 8px;">글쓰기</a>
 
 </div>
-	</form>
+</form>
 <c:import url="../template/footer.jsp"></c:import>
 
 <script type="text/javascript">
