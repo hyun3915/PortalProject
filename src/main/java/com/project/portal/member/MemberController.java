@@ -74,9 +74,11 @@ public class MemberController {
 			vo.setAddr3(memberVO.getAddr3());
 			vo.setPw(memberVO.getPw());
 			session.setAttribute("member", vo);
+			String message = "수정되었습니다!";
+			mv.addObject("msg", message);
+			mv.setViewName("common/result");  
 		}
-		
-		mv.setViewName("redirect:./memberPage");
+		mv.addObject("path", "./memberPage");
 		return mv;
 	}
 	
@@ -86,8 +88,13 @@ public class MemberController {
 		MemberVO memberVO = (MemberVO)session.getAttribute("member");
 		int result = memberService.setMemberDelete(memberVO);
 		session.invalidate();
-		
-		mv.setViewName("redirect:../");
+		String message = "삭제 실패했습니다!";
+	      if(result>0) {
+	         message = "삭제되었습니다!";
+	      }
+	    mv.addObject("msg", message);
+	    mv.setViewName("common/result");  
+	    mv.addObject("path", "./memberLogin");
 		return mv;
 	}
 

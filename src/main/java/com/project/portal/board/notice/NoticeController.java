@@ -96,7 +96,7 @@ public class NoticeController {
 		
 		String message = "수정이 실패했습니다!";
 	      if(result>0) {
-	         message = "수정 완료되었습니다!";
+	         message = "수정되었습니다!";
 	      }
   
 	    mv.addObject("msg", message);

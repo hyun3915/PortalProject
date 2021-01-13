@@ -86,14 +86,12 @@
 			</tr>
 			<tr class="table_tr">
 				
-				<td class="index">주소</td><td colspan="5" id="address"></td>
+				<td class="index" style="padding-top: 25px;">주소</td>
+				<td colspan="5" style="padding-top: 0px; line-height: 30px; ">(&nbsp;${member.addr1}&nbsp;)<br>${member.addr2}&nbsp;${member.addr3}</td>
 			</tr>
 		</table>
 	
 </div>
 <c:import url="../template/footer.jsp"></c:import>
-<script type="text/javascript">
-	document.getElementById('address').innerText='${member.addr1}${member.addr2}${member.addr3}';
-</script>
 </body>
 </html>

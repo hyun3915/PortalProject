@@ -16,7 +16,7 @@
 
 	.container{
 		width: 1300px;
-		height: 700px;
+		height: 800px;
 		margin: 0 auto;
 		display: block;
 	}
@@ -35,7 +35,7 @@
 	
 	.table_tr .index{
 		background-color: #EFF2F7;
-		width: 70px;
+		width: 90px;
 		font-size: 13px;
 		font-weight: 600;
 		color: #5A5752;
@@ -44,13 +44,24 @@
 	.main_table td{
 		border-bottom: 1px solid #DFE6EE;
 		width: 110px;
-		height: 77px;
-		padding-top: 30px;
+		height: 70px;
+		padding-top: 25px;
 		padding-left: 10px;
 		font-size: 13px;
 		font-weight: 500;
 		color: #5A5752;
 		margin-top: 20px;
+	}
+	
+	.update{
+		width: 200px;
+		height: 50px;
+		margin-top: 650px;
+		margin-left: 940px;
+	}
+	
+	.btn{
+		float: right;
 	}
 
 </style>
@@ -67,8 +78,8 @@
 		<table class="main_table">
 			<tr class="table_tr" style="border-top: 3px solid #072F72;">
 				<td class="index">아이디</td><td>${member.id}</td>
-				<td class="index">전화번호</td><td><input style="width:180px;" type="text" class="inputTypeText" id="phone" name="phone" value="${member.phone}" required="required"></td>
-				<td class="index">이메일</td><td><input style="width:180px;" type="text" class="inputTypeText" id="email" name="email" value="${member.email}" required="required"> </td>
+				<td class="index">전화번호</td><td><input style="width:180px;" type="text" class="form-control" id="phone" name="phone" value="${member.phone}" required="required"></td>
+				<td class="index">이메일</td><td><input style="width:180px;" type="text" class="form-control" id="email" name="email" value="${member.email}" required="required"> </td>
 			</tr>
 			<tr class="table_tr">
 				<td class="index">학번</td><td>${member.codeNum}</td>
@@ -87,20 +98,23 @@
 			</tr>
 			<tr class="table_tr">
 				<td class="index">주소</td>
-         		<td colspan="5">
-            		<input class="form-control"name="addr1" id="addr1" type="text" value="${member.addr1}">
-              		<button type="button" class="btn btn-default" onclick="execPostCode();"><i class="fa fa-search"></i> 우편번호 찾기</button>                               
+         		<td colspan="5" style="padding-bottom: 28px;">
+            		<input style="margin-bottom: 5px;" class="form-control"name="addr1" id="addr1" type="text" value="${member.addr1}">
+              		<button style="float: left; margin-bottom: 5px;" type="button" class="btn btn-default" onclick="execPostCode();"><i class="fa fa-search"></i> 우편번호 찾기</button>                               
          
-            		<input class="form-control" name="addr2" id="addr2" type="text" value="${member.addr2}"/>
+            		<input style="margin-bottom: 5px;" class="form-control" name="addr2" id="addr2" type="text" value="${member.addr2}"/>
 
             		<input class="form-control" name="addr3" id="addr3" type="text" value="${member.addr3}"/>
          		</td>
 			</tr>
 			<tr class="table_tr">
-				<td class="index">비밀번호</td><td colspan="5"><input style="width:180px;" type="password" class="inputTypeText" id="pw" name="pw" required="required"></td>
+				<td class="index">비밀번호</td><td colspan="5"><input style="width:180px;" type="password" class="form-control" id="pw" value="${member.pw}" name="pw" required="required"></td>
 			</tr>
 		</table>
-		<button type="submit" class="btn btn-default">Submit</button>
+		<div class="update">
+			<a href="./memberDelete" class="btn btn-default">회원탈퇴</a>
+			<button style="margin-right: 15px; width: 62px;" type="submit" class="btn btn-default">수정</button>
+		</div>
 </form>		
 </div>
 <c:import url="../template/footer.jsp"></c:import>
