@@ -87,10 +87,9 @@
 			<tr class="table_tr">
 				
 				<td class="index">주소</td><td colspan="5" id="address"></td>
-				
 			</tr>
 		</table>
-	<a href="./memberUpdate" class="btn btn-primary">Update</a>
+	
 </div>
 <c:import url="../template/footer.jsp"></c:import>
 <script type="text/javascript">

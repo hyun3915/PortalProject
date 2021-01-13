@@ -62,7 +62,8 @@
 <c:import url="../${pageContext.request.contextPath}/template/header.jsp"></c:import>
 <c:import url="../template/sideNav2.jsp"></c:import>
 <div class="container">
-<h2 style="padding-top: 30px; margin-left: 240px; font-weight: 600; font-size: 30px;font-family: inherit; color: inherit;">개인정보</h2>
+<form action="./memberUpdate" method="post">
+<h2 style="padding-top: 30px; margin-left: 240px; font-weight: 600; font-size: 30px;font-family: inherit; color: inherit;">개인정보 변경</h2>
 		<table class="main_table">
 			<tr class="table_tr" style="border-top: 3px solid #072F72;">
 				<td class="index">아이디</td><td>${member.id}</td>
@@ -85,9 +86,8 @@
 				<td class="index">성별</td><td>${member.gender}</td>				
 			</tr>
 			<tr class="table_tr">
-				<td class="index">주소</td><td colspan="5" id="address"></td>
-				<td  class="leftrow">주소</td>
-         		<td>
+				<td class="index">주소</td>
+         		<td colspan="5">
             		<input class="form-control"name="addr1" id="addr1" type="text" value="${member.addr1}">
               		<button type="button" class="btn btn-default" onclick="execPostCode();"><i class="fa fa-search"></i> 우편번호 찾기</button>                               
          
@@ -96,8 +96,12 @@
             		<input class="form-control" name="addr3" id="addr3" type="text" value="${member.addr3}"/>
          		</td>
 			</tr>
+			<tr class="table_tr">
+				<td class="index">비밀번호</td><td colspan="5"><input style="width:180px;" type="password" class="inputTypeText" id="pw" name="pw" required="required"></td>
+			</tr>
 		</table>
-		
+		<button type="submit" class="btn btn-default">Submit</button>
+</form>		
 </div>
 <c:import url="../template/footer.jsp"></c:import>
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
