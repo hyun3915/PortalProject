@@ -54,10 +54,10 @@
 	}
 	
 	.update{
-		width: 200px;
+		width: 300px;
 		height: 50px;
-		margin-top: 650px;
-		margin-left: 940px;
+		margin-top: 630px;
+		margin-left: 840px;
 	}
 	
 	.btn{
@@ -108,12 +108,16 @@
          		</td>
 			</tr>
 			<tr class="table_tr">
-				<td class="index">비밀번호</td><td colspan="5"><input style="width:180px;" type="password" class="form-control" id="pw" value="${member.pw}" name="pw" required="required"></td>
+				<td class="index">비밀번호</td>
+				<td colspan="5">
+				<input style="width:180px;" type="password" class="form-control" value="${member.pw}" id="pw" name="pw" required="required">
+				</td>
 			</tr>
 		</table>
 		<div class="update">
-			<a href="./memberDelete" class="btn btn-default">회원탈퇴</a>
-			<button style="margin-right: 15px; width: 62px;" type="submit" class="btn btn-default">수정</button>
+			<a href="./memberPage" style="margin-left: 12px; width: 62px;" class="btn btn-default">취소</a>
+			<a href="./memberDelete" class="btn btn-default" id="delete">회원탈퇴</a>
+			<button style="margin-right: 12px; width: 62px;" type="submit" class="btn btn-default">수정</button>
 		</div>
 </form>		
 </div>
@@ -162,6 +166,7 @@ function execPostCode() {
        }
     }).open();
 }
+
 </script>
 </body>
 </html>

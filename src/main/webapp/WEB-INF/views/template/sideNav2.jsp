@@ -99,7 +99,7 @@
   <div id="w">
     <nav>
       <ul id="nav">
-        <li><a href="#" style="border-top: 3px solid #072F72;">개인정보<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
+        <li><a href="./memberPage" style="border-top: 3px solid #072F72;">개인정보<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
             <li><a href="./memberUpdate">개인정보변경</a></li>
             <li><a href="#">학생생활정보</a></li>
