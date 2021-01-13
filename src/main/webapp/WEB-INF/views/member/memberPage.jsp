@@ -28,6 +28,7 @@
 		margin-top: 45px;
 		margin-left: 40px;
 		background-color: yellow;
+		border: 1px solid black;
 	}
 
 </style>
@@ -42,11 +43,35 @@
 
 		<table class="main_table">
 			<tr>
-				<td>myPage</td>
+				<td>아이디</td><td>${member.id}</td>
+				<td colspan="3">비밀번호</td><td>${member.pw}</td>
+			</tr>
+			<tr>
+				<td>학번</td><td>${member.codeNum}</td>
+				<td>성명</td><td>${member.name}</td>
+				<td>생년월일</td><td>${member.birth}</td>
+			</tr>
+			<tr>
+				<td>대학(원)</td><td>${member.campus}캠퍼스</td>
+				<td>조직/과정</td><td>${member.course}</td>
+				<td>전공</td><td>${member.major}학과</td>
+			</tr>
+			<tr>
+				<td>학년(이수학기)</td><td>본교&nbsp;${member.grade}학년</td>
+				<td>입학일자</td><td>${member.enrollDate}</td>
+				<td>성별</td><td>${member.gender}</td>				
+			</tr>
+			<tr>
+				<td>전화번호</td><td>${member.phone}</td>
+				<td>주소</td><td id="address"></td>
+				<td>이메일</td><td>${member.email}</td>
 			</tr>
 		</table>
 		
 </div>
 <c:import url="../template/footer.jsp"></c:import>
+<script type="text/javascript">
+	
+</script>
 </body>
 </html>

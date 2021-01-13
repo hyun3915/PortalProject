@@ -23,5 +23,6 @@ public class MemberVO {
 	private String major;
 	private String grade;
 	private String campus;
+	private long codeNum;
 
 }
