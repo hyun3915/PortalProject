@@ -12,5 +12,13 @@ public class MemberService {
 	public MemberVO getMemberLogin(MemberVO memberVO) throws Exception{
 		return memberMapper.getMemberLogin(memberVO);
 	}
+	
+	public int setMemberUpdate(MemberVO memberVO) throws Exception{
+		return memberMapper.setMemberUpdate(memberVO);
+	}
+	
+	public int setMemberDelete(MemberVO memberVO) throws Exception{
+		return memberMapper.setMemberDelete(memberVO);
+	}
 
 }

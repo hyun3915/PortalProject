@@ -49,5 +49,46 @@ public class MemberController {
 	public void getMemberPage() throws Exception{
 		
 	}
+	
+	@GetMapping("memberUpdate")
+	public ModelAndView setMemberUpdate() throws Exception{
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("member/memberUpdate");
+		return mv;
+	}
+	
+	@PostMapping("memberUpdate")
+	public ModelAndView setMemberUpdate(MemberVO memberVO, HttpSession session) throws Exception{
+		
+		ModelAndView mv = new ModelAndView();
+		MemberVO vo = (MemberVO)session.getAttribute("member");
+		memberVO.setId(vo.getId());
+		
+		int result = memberService.setMemberUpdate(memberVO);
+		
+		if(result>0) {
+			vo.setPhone(memberVO.getPhone());
+			vo.setEmail(memberVO.getEmail());
+			vo.setAddr1(memberVO.getAddr1());
+			vo.setAddr2(memberVO.getAddr2());
+			vo.setAddr3(memberVO.getAddr3());
+			vo.setPw(memberVO.getPw());
+			session.setAttribute("member", vo);
+		}
+		
+		mv.setViewName("redirect:./memberPage");
+		return mv;
+	}
+	
+	@GetMapping("memberDelete")
+	public ModelAndView setMemberDelete(HttpSession session) throws Exception{
+		ModelAndView mv = new ModelAndView();
+		MemberVO memberVO = (MemberVO)session.getAttribute("member");
+		int result = memberService.setMemberDelete(memberVO);
+		session.invalidate();
+		
+		mv.setViewName("redirect:../");
+		return mv;
+	}
 
 }

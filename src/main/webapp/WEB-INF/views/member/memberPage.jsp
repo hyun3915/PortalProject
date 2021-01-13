@@ -90,7 +90,7 @@
 				
 			</tr>
 		</table>
-		
+	<a href="./memberUpdate" class="btn btn-primary">Update</a>
 </div>
 <c:import url="../template/footer.jsp"></c:import>
 <script type="text/javascript">
