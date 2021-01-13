@@ -46,7 +46,7 @@
 	h1 { font-family: 'Merienda', 'Trebuchet MS', Verdana, sans-serif; font-size: 2.95em; line-height: 1.7em; margin-bottom: 20px; font-weight: bold; letter-spacing: -0.03em; color: #675d90; text-shadow: 2px 2px 0px rgba(255,255,255,0.65); text-align: center; }
 
 
-	#w { float: left; width: 270px; padding-top: 45px; }
+	#w { float: left; width: 270px; padding-top: 95px; }
 
 
 	/* nav menu styles */
@@ -99,9 +99,9 @@
   <div id="w">
     <nav>
       <ul id="nav">
-        <li><a href="#" style="border-top: 4px solid #072F72;">개인정보<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
+        <li><a href="#" style="border-top: 3px solid #072F72;">개인정보<img alt="" src="../images/arrow.png" width="26px" height="26px" style="float: right; cursor: pointer;"></a>
           <ul>
-            <li><a href="#">신상정보관리</a></li>
+            <li><a href="#">개인정보변경</a></li>
             <li><a href="#">학생생활정보</a></li>
             <li><a href="#">가족사항</a></li>
             <li><a href="#">학적변동내역</a></li>
